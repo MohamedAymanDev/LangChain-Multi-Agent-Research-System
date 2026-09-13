@@ -16,7 +16,7 @@ import re
 # load .env
 load_dotenv()
 
-tavily = TavilyClient(api_key="TAVILY_API_KEY")
+tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
 
 # Web Search
 @tool
