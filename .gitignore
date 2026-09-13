@@ -1,0 +1,123 @@
+# ==========================================
+
+# Environment & Secrets
+
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+# ==========================================
+
+# Python
+
+# ==========================================
+
+**pycache**/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+ENV/
+
+# Python tooling
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+
+# Jupyter
+
+# ==========================================
+
+.ipynb_checkpoints/
+
+# ==========================================
+
+# FastAPI / Backend
+
+# ==========================================
+
+*.log
+logs/
+
+# Temporary files
+
+*.tmp
+*.temp
+
+# ==========================================
+
+# Node / React / Vite
+
+# ==========================================
+
+node_modules/
+dist/
+build/
+.vite/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==========================================
+
+# IDE / Editors
+
+# ==========================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+
+# OS Generated Files
+
+# ==========================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+
+# Generated / Local Files
+
+# ==========================================
+
+*.pdf
+*.csv
+*.jsonl
+
+# Keep important project configuration examples
+
+!.env.example
+
+# ==========================================
+
+# Local secrets / credentials
+
+# ==========================================
+
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+credentials.json
+service-account.json

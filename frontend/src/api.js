@@ -1,7 +1,7 @@
 // Base URL of the FastAPI backend. Configurable via Vite env var so the
 // same build can point at different backends (local, staging, prod)
 // without a code change. No API keys ever live in this file or bundle.
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000'
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000'
 
 export async function checkHealth() {
   const res = await fetch(`${API_BASE_URL}/health`)
