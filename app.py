@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-from src.Agents.agents import build_search_agent, build_reader_agent, writer_chain, critic_chain
+from backend.src.Agents.agents import build_search_agent, build_reader_agent, writer_chain, critic_chain
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(

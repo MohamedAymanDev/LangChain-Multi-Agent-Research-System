@@ -1,4 +1,4 @@
-from src.Agents.agents import (build_reader_agent,
+from backend.src.Agents.agents import (build_reader_agent,
                                build_search_agent,
                                writer_chain,
                                critic_chain)

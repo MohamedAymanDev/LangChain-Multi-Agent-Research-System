@@ -7,7 +7,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 from dotenv import load_dotenv
-from src.Tools.tools import web_search , scarp_url
+from backend.src.Tools.tools import web_search , scarp_url
 
 
 # Load env
