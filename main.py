@@ -1,11 +1,27 @@
 from src.Tools.tools import web_search, scarp_url
-from src.Agents.agents import llm
-# res = web_search.invoke("Find Roadmap of Frontend")
-# print(res)
+from src.Agents.agents import llm , build_search_agent , build_reader_agent
 
-# url = "https://en.wikipedia.org/wiki/Artificial_intelligence"
-# res = scarp_url.invoke(url)
-# print(res)
+# Build agent 
+search_agent = build_search_agent()
+reader_agent = build_reader_agent()
 
-res = llm.invoke("Say Hello in one sentenc")
-print(res.content)
+# test 
+search_res = search_agent.invoke({
+    'messages':[
+        {
+            'role':'user',
+            'content':'Find information abot GPT 6'
+        }
+    ]
+})
+
+# print(search_res)
+reder_res = reader_agent.invoke({
+    'messages':[
+        {
+            'role' : 'user',
+            'content':'Read this URL and Extract its main content: https://fastapi.tiangolo.com/'
+        }
+    ]
+})
+print(reder_res)
